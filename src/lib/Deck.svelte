@@ -99,17 +99,16 @@
 	}
 
 	/* Click anywhere advances; the left 20% goes back. Controls opt out via [data-nav]. */
-	function onClick(e: MouseEvent) {
+	/* function onClick(e: MouseEvent) {
 		if ((e.target as HTMLElement).closest('[data-nav]')) return;
 		if (e.clientX < window.innerWidth * 0.2) prev();
 		else next();
-	}
+	} */
 </script>
 
 <svelte:window on:keydown={onKeydown} />
 
-<!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_static_element_interactions -->
-<div class="deck" onclick={onClick}>
+<div class="deck" >
 	<div class="ambient" aria-hidden="true">
 		<span class="glow glow-a"></span>
 		<span class="glow glow-b"></span>

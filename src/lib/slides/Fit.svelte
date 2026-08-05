@@ -67,7 +67,10 @@
 	<p class="links">
 		<span class="thanks">Thanks — questions?</span>
 		<span>Tomas Rezac <em>·</em> Applifting</span>
-		<a href="https://zero.rocicorp.dev/docs">zero.rocicorp.dev/docs</a>
+		<!-- data-nav so clicking the link doesn't also advance the deck -->
+		<a href="https://zero.rocicorp.dev/docs" target="_blank" rel="noreferrer" data-nav>
+			zero.rocicorp.dev/docs
+		</a>
 	</p>
 </div>
 
@@ -227,8 +230,15 @@
 		margin: 0 0.25em;
 	}
 
-	.links code {
+	.links a {
 		font-family: var(--font-mono);
 		color: var(--cyan);
+		text-decoration: none;
+		border-bottom: 1px solid #5ecae74d;
+		transition: border-color 0.25s var(--ease);
+	}
+
+	.links a:hover {
+		border-bottom-color: var(--cyan);
 	}
 </style>

@@ -7,10 +7,7 @@
 export const queries = defineQueries({
   posts: {
     byAuthor: defineQuery(
-      z.object({
-        authorID: z.string(),
-        includeDrafts: z.boolean().optional(),
-      }),
+      z.object({authorID: z.string(), includeDrafts: z.boolean().optional()}),
       ({args: {authorID, includeDrafts}}) => {
         let q = zql.post.where('authorID', authorID)
         if (!includeDrafts) {
@@ -32,32 +29,25 @@ export const queries = defineQueries({
 
 	const mutatorSrc = `export const mutators = defineMutators({
   addComment: defineMutator(
-    z.object({
-      id: z.string(),
-      issueID: z.string(),
-      text: z.string(),
-    }),
+    z.object({id: z.string(), issueID: z.string(), text: z.string()}),
     async ({tx, ctx: {userID}, args}) => {
-      // read-before-write, same transaction
-      const issue = await tx.run(
-        zql.issue.where('id', args.issueID).one(),
-      )
+      // read-before-write, in the same transaction
+      const issue = await tx.run(zql.issue.where('id', args.issueID).one())
+
       // throwing rolls the whole mutation back
       if (issue?.status === 'closed') {
         throw new Error('Issue is closed')
       }
+
       // userID comes from the server — unforgeable
-      await tx.mutate.comment.insert({
-        ...args,
-        authorID: userID,
-      })
+      await tx.mutate.comment.insert({...args, authorID: userID})
     },
   ),
 })`;
 
 	const notes = [
 		'Mutators run <b>more than once</b> — optimistically on the client, then authoritatively on the server.',
-		'Treat everything <code>useQuery</code> returns as <b>immutable</b>.',
+		'Treat everything <code>useQuery</code> returns as <b>immutable</b>.'
 	];
 </script>
 

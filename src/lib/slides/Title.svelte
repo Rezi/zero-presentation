@@ -29,8 +29,6 @@
 		<li>Reactive by default</li>
 		<li class="hot">&lt; 1s load</li>
 	</ul>
-
-	
 </div>
 
 <style>
@@ -136,32 +134,5 @@
 		background: #fac61f14;
 		color: var(--yellow);
 		font-weight: 600;
-	}
-
-	.by {
-		display: flex;
-		align-items: center;
-		gap: 0.85rem;
-		margin: clamp(0.3rem, 1.2vmin, 1rem) 0 0;
-		font-size: clamp(0.8rem, 1.3vmin, 1.0rem);
-	}
-
-	.who {
-		font-weight: 600;
-		color: var(--ink);
-	}
-
-	.sep {
-		width: clamp(1.5rem, 5vmin, 4rem);
-		height: 1px;
-		background: var(--navy-line);
-	}
-
-	.nudge {
-		display: flex;
-		align-items: center;
-		gap: 0.35em;
-		color: var(--ink-mute);
-		font-size: 0.9em;
 	}
 </style>

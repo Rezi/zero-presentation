@@ -5,6 +5,7 @@
 	import Problem from '$lib/slides/Problem.svelte';
 	import HowItWorks from '$lib/slides/HowItWorks.svelte';
 	import Api from '$lib/slides/Api.svelte';
+	import SchemaZql from '$lib/slides/SchemaZql.svelte';
 	import Fit from '$lib/slides/Fit.svelte';
 
 	const slides: Slide[] = [
@@ -12,6 +13,7 @@
 		{ label: 'Why bother', steps: 4, component: Problem },
 		{ label: 'How it works', steps: 6, component: HowItWorks },
 		{ label: 'The API', steps: 4, component: Api },
+		{ label: 'Schema & ZQL', steps: 4, component: SchemaZql },
 		{ label: 'Reality check', steps: 5, component: Fit }
 	];
 </script>

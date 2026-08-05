@@ -156,7 +156,7 @@
 
 	.prior {
 		font-family: var(--font-mono);
-		font-size: clamp(0.8rem, 1.36vmin, 1.0rem) !important;
+		font-size: clamp(0.8rem, 1.36vmin, 1rem) !important;
 		color: var(--ink-dim) !important;
 		margin-bottom: 0.5em !important;
 	}

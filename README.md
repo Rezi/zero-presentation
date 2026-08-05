@@ -1,6 +1,6 @@
 # Zero Sync — internal tech talk
 
-A five-slide deck on [Zero](https://zero.rocicorp.dev), the query-driven sync engine for
+A six-slide deck on [Zero](https://zero.rocicorp.dev), the query-driven sync engine for
 TypeScript + Postgres. Built for internal use at Applifting by **Tomas Rezac**.
 
 ## Running it
@@ -34,7 +34,8 @@ handy for jumping straight to the architecture diagram mid-discussion.
 2. **Why bother** — the latency tax of request/response, and why sync engines stayed niche
 3. **How it works** — animated architecture diagram, stepped through the query and mutation lifecycle
 4. **The API surface** — `defineQueries` / `useQuery` / `defineMutators`, plus the pitfalls
-5. **Reality check** — when to reach for Zero, when not to, and the hard numbers
+5. **Schema & ZQL** — hand-written schema vs. generating it from Drizzle/Prisma, and what ZQL can and can't express
+6. **Reality check** — when to reach for Zero, when not to, and the hard numbers
 
 ## Structure
 
