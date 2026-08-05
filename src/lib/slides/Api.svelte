@@ -56,10 +56,8 @@ export const queries = defineQueries({
 })`;
 
 	const notes = [
-		'Mutators run <b>more than once</b> — optimistically on the client, then authoritatively on the server. Never generate IDs or timestamps inside one; pass <code>uuidv7()</code> in as an argument.',
+		'Mutators run <b>more than once</b> — optimistically on the client, then authoritatively on the server.',
 		'Treat everything <code>useQuery</code> returns as <b>immutable</b>.',
-		'Queries <b>must</b> be indexed. Check them with <code>npx analyze-query</code> — a <code>TEMP B-TREE</code> in the plan means unoptimized, and <code>zero-cache</code> derives its indexes from upstream.',
-		'TTL keeps rows warm after a query goes inactive: <code>5m</code> by default, <code>none</code> for <code>preload()</code>. The clock only ticks while Zero is running.'
 	];
 </script>
 
@@ -136,7 +134,7 @@ export const queries = defineQueries({
 	.notes li {
 		position: relative;
 		padding-left: 1.35em;
-		font-size: clamp(0.58rem, 1.19vmin, 0.87rem);
+		font-size: clamp(0.8rem, 1.19vmin, 0.87rem);
 		line-height: 1.5;
 		color: var(--ink-mute);
 	}

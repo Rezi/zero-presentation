@@ -4,7 +4,7 @@
 
 <div class="title-slide">
 	<p class="eyebrow step on">
-		Applifting <span>·</span> Internal tech talk <span>·</span> August 2026
+		Applifting <span>·</span> ⚡️Frontend Lightning Talks⚡️ <span>·</span> August 2026
 	</p>
 
 	<h1 class="hero step on">
@@ -30,11 +30,7 @@
 		<li class="hot">&lt; 1s load</li>
 	</ul>
 
-	<p class="by step" class:on={step >= 2}>
-		<span class="who">Tomas Rezac</span>
-		<span class="sep"></span>
-		<span class="nudge">press <kbd>→</kbd> or <kbd>space</kbd></span>
-	</p>
+	
 </div>
 
 <style>
@@ -97,7 +93,7 @@
 		margin: 0;
 		padding-left: clamp(0.7rem, 1.6vmin, 1.2rem);
 		border-left: 2px solid var(--navy-line);
-		font-size: clamp(0.72rem, 1.5vmin, 1.1rem);
+		font-size: clamp(0.8rem, 1.5vmin, 1.1rem);
 		color: var(--ink-mute);
 	}
 
@@ -130,7 +126,7 @@
 		border: 1px solid var(--navy-line);
 		border-radius: 999px;
 		background: #ffffff08;
-		font-size: clamp(0.6rem, 1.2vmin, 0.9rem);
+		font-size: clamp(0.8rem, 1.2vmin, 0.9rem);
 		font-weight: 500;
 		color: var(--ink-dim);
 	}
@@ -147,7 +143,7 @@
 		align-items: center;
 		gap: 0.85rem;
 		margin: clamp(0.3rem, 1.2vmin, 1rem) 0 0;
-		font-size: clamp(0.65rem, 1.3vmin, 1rem);
+		font-size: clamp(0.8rem, 1.3vmin, 1.0rem);
 	}
 
 	.who {

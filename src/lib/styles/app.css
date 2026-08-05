@@ -44,7 +44,7 @@ body {
 /* ---- shared slide primitives ---- */
 
 .eyebrow {
-	font-size: clamp(0.62rem, 1.05vmin, 0.95rem);
+	font-size: clamp(0.8rem, 1.05vmin, 0.95rem);
 	font-weight: 600;
 	letter-spacing: 0.28em;
 	text-transform: uppercase;

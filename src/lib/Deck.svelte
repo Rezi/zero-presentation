@@ -120,7 +120,7 @@
 	<div class="progress" aria-hidden="true"><i style="width:{progress}%"></i></div>
 
 	<header class="chrome top">
-		<span class="brand"><b>Zero</b> Sync <em>·</em> {org} internal</span>
+		<span class="brand"><b>Zero</b> Sync <em>·</em> {org}</span>
 		<span class="hint" data-nav>
 			<kbd>←</kbd><kbd>→</kbd><kbd>space</kbd> <em>·</em> <kbd>F</kbd> fullscreen
 		</span>
@@ -256,7 +256,7 @@
 		justify-content: space-between;
 		gap: 1rem;
 		padding: clamp(0.8rem, 2.2vmin, 1.7rem) clamp(1.1rem, 4vmin, 3.4rem);
-		font-size: clamp(0.58rem, 1.1vmin, 0.85rem);
+		font-size: clamp(0.8rem, 1.1vmin, 0.85rem);
 		color: var(--ink-mute);
 		letter-spacing: 0.04em;
 	}

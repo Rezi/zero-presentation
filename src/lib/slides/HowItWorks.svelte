@@ -282,7 +282,7 @@
 		border-radius: 999px;
 		background: #ffffff05;
 		font-family: var(--font-sans);
-		font-size: clamp(0.58rem, 1.18vmin, 0.88rem);
+		font-size: clamp(0.8rem, 1.18vmin, 0.88rem);
 		font-weight: 500;
 		color: #6f6f85;
 		transition: all 0.35s var(--ease);
@@ -334,7 +334,7 @@
 		display: flex;
 		gap: 0.75em;
 		margin: 0;
-		font-size: clamp(0.68rem, 1.42vmin, 1.05rem);
+		font-size: clamp(0.8rem, 1.42vmin, 1.05rem);
 		line-height: 1.55;
 		color: var(--ink-dim);
 		max-width: 104ch;

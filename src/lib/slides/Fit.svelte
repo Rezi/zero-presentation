@@ -18,7 +18,7 @@
 	const stats = [
 		{ v: '< 1s', l: 'typical app load' },
 		{ v: '100 GB', l: 'recommended ceiling' },
-		{ v: 'NVMe', l: 'the replica needs it' },
+		{ v: 'NVMe (SSD)', l: 'the replica needs it' },
 		{ v: 'TS', l: 'client languages' }
 	];
 </script>
@@ -67,7 +67,7 @@
 	<p class="links">
 		<span class="thanks">Thanks — questions?</span>
 		<span>Tomas Rezac <em>·</em> Applifting</span>
-		<code>zero.rocicorp.dev/docs</code>
+		<a href="https://zero.rocicorp.dev/docs">zero.rocicorp.dev/docs</a>
 	</p>
 </div>
 
@@ -121,7 +121,7 @@
 	.list li {
 		position: relative;
 		padding: 0 0 0 1.2em;
-		font-size: clamp(0.72rem, 1.6vmin, 1.18rem);
+		font-size: clamp(0.8rem, 1.6vmin, 1.18rem);
 		line-height: 1.5;
 		color: var(--ink-mute);
 	}
@@ -178,7 +178,7 @@
 	}
 
 	.stat span {
-		font-size: clamp(0.6rem, 1.3vmin, 0.95rem);
+		font-size: clamp(0.8rem, 1.3vmin, 0.95rem);
 		color: var(--ink-mute);
 		letter-spacing: 0.03em;
 	}
@@ -196,7 +196,7 @@
 		border-radius: 12px;
 		border: 1px solid #fac61f42;
 		background: #fac61f12;
-		font-size: clamp(0.74rem, 1.62vmin, 1.2rem);
+		font-size: clamp(0.8rem, 1.62vmin, 1.2rem);
 		line-height: 1.55;
 		color: var(--ink-dim);
 		max-width: none;
@@ -212,7 +212,7 @@
 		align-items: center;
 		gap: clamp(0.7rem, 2vmin, 1.6rem);
 		margin: 0;
-		font-size: clamp(0.68rem, 1.46vmin, 1.08rem);
+		font-size: clamp(0.8rem, 1.46vmin, 1.08rem);
 		color: var(--ink-mute);
 	}
 

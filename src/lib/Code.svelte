@@ -67,7 +67,7 @@
 		border-bottom: 1px solid var(--navy-line);
 		background: #16161f;
 		font-family: var(--font-mono);
-		font-size: clamp(0.55rem, 1.05vmin, 0.8rem);
+		font-size: clamp(0.8rem, 1.05vmin, 0.95rem);
 		letter-spacing: 0.06em;
 		color: var(--ink-mute);
 	}
@@ -91,7 +91,7 @@
 
 	code {
 		font-family: var(--font-mono);
-		font-size: clamp(0.5rem, 1.19vmin, 0.92rem);
+		font-size: clamp(0.8rem, 1.19vmin, 0.92rem);
 		line-height: 1.7;
 		color: #e4e4ef;
 		white-space: pre;

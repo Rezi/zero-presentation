@@ -10,7 +10,7 @@
 		{
 			n: '02',
 			k: 'Stale',
-			d: 'The client has <b>no idea when data changes</b>. You bolt on polling, cache keys and invalidation rules, and still ship stale screens.'
+			d: 'The client has <b>no idea when data changes</b>. You set up polling, cache keys and invalidation rules, and still ship stale screens.'
 		},
 		{
 			n: '03',
@@ -54,7 +54,7 @@
 		</div>
 
 		<div class="block step" class:on={step >= 2}>
-			<h4>So why doesn't everyone?</h4>
+			<h4>So why doesn't everyone use it?</h4>
 			<p>
 				&ldquo;Sync engines are <b>very hard to build</b>.&rdquo; Google Docs, Figma and Linear each
 				built their own — at significant cost.
@@ -102,7 +102,7 @@
 		left: clamp(0.9rem, 1.9vmin, 1.5rem);
 		top: clamp(0.85rem, 1.8vmin, 1.45rem);
 		font-family: var(--font-mono);
-		font-size: clamp(0.66rem, 1.42vmin, 1.05rem);
+		font-size: clamp(0.8rem, 1.42vmin, 1.05rem);
 		font-weight: 600;
 		color: var(--yellow);
 		opacity: 0.75;
@@ -117,7 +117,7 @@
 
 	.pain p {
 		margin: 0;
-		font-size: clamp(0.72rem, 1.6vmin, 1.18rem);
+		font-size: clamp(0.8rem, 1.6vmin, 1.18rem);
 		line-height: 1.55;
 		color: var(--ink-mute);
 	}
@@ -137,14 +137,14 @@
 
 	.block h4 {
 		margin: 0 0 0.3em;
-		font-size: clamp(0.76rem, 1.66vmin, 1.22rem);
+		font-size: clamp(0.8rem, 1.66vmin, 1.22rem);
 		font-weight: 600;
 		color: var(--cyan);
 	}
 
 	.block p {
 		margin: 0;
-		font-size: clamp(0.7rem, 1.54vmin, 1.14rem);
+		font-size: clamp(0.8rem, 1.54vmin, 1.14rem);
 		line-height: 1.55;
 		color: var(--ink-mute);
 	}
@@ -156,7 +156,7 @@
 
 	.prior {
 		font-family: var(--font-mono);
-		font-size: clamp(0.64rem, 1.36vmin, 1rem) !important;
+		font-size: clamp(0.8rem, 1.36vmin, 1.0rem) !important;
 		color: var(--ink-dim) !important;
 		margin-bottom: 0.5em !important;
 	}
@@ -180,7 +180,7 @@
 		display: flex;
 		align-items: baseline;
 		gap: 0.45em;
-		font-size: clamp(0.67rem, 1.44vmin, 1.06rem);
+		font-size: clamp(0.8rem, 1.44vmin, 1.06rem);
 		color: var(--ink-dim);
 	}
 
@@ -197,7 +197,7 @@
 		border-radius: 12px;
 		border: 1px solid #fac61f42;
 		background: #fac61f12;
-		font-size: clamp(0.74rem, 1.62vmin, 1.2rem);
+		font-size: clamp(0.8rem, 1.62vmin, 1.2rem);
 		line-height: 1.5;
 		color: var(--ink);
 	}
