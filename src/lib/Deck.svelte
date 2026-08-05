@@ -163,7 +163,6 @@
 		display: grid;
 		grid-template-rows: auto 1fr auto;
 		overflow: hidden;
-		cursor: pointer;
 		background: radial-gradient(1200px 700px at 78% -10%, #1e1e2e 0%, transparent 60%), var(--navy);
 	}
 

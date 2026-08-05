@@ -61,7 +61,7 @@
 <div class="outro step" class:on={step >= 4}>
 	<p class="verdict">
 		<b>Verdict.</b> Zero deletes the data-fetching layer — endpoints, cache keys, invalidation, loading
-		states — and charges you a stateful service to operate. For our productivity-app work, that trade
+		states. For our productivity-app work, that trade
 		is worth a spike.
 	</p>
 	<p class="links">
