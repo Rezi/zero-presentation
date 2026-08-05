@@ -54,7 +54,7 @@
 		</div>
 
 		<div class="block step" class:on={step >= 2}>
-			<h4>So why none use it?</h4>
+			<h4>So why none uses it?</h4>
 			<p>
 				&ldquo;Sync engines are <b>very hard to build</b>.&rdquo; Google Docs, Figma and Linear each
 				built their own — at significant cost.
